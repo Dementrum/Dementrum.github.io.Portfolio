@@ -40,3 +40,32 @@ size(a, b = false)
 		height b
 	else
 		height a
+		
+rem(target)
+	target / base-font + 0rem
+
+em(target, context)
+	target / context + 0em
+
+persent(target, context)
+	target / context * 100%
+
+row(pos1 = null, pos2 = null)
+	display flex
+	flex-direction row
+	justify-content flex-start
+	align-items stretch
+    if pos1
+		justify-content pos1
+	if pos2
+		align-items pos2
+
+col(pos1 = null, pos2 = null)
+	display flex
+	flex-direction column
+	justify-content flex-start
+	align-items stretch
+	if pos1
+		justify-content pos1
+	if pos2
+		align-items pos2

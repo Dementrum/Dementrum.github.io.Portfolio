@@ -3,5 +3,10 @@
     "Главная страница" : "main.html",
     "О компании" : "about.html",
     "Каталог" : "catalog.html"
+},
+  "hamburger": {
+    "Обо мне" : "main.html",
+    "О компании" : "about.html",
+    "Каталог" : "catalog.html"
   }
 }

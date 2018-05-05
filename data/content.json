@@ -1,6 +1,13 @@
 {
-  "content": {
-    " " : " ",
-    " " : " "
-  }
+  "skills": [
+	  {
+		  "Frontend" : ["Html5", "Css3", "Javascript & JQuery"]
+	  },
+	  {
+		  "Backend" : ["PHP", "mySQL", "Node.js & npm", "Mongo.db"]
+	  },
+	  {
+		  "WorkFlow" : ["Git", "Gulp", "Vim"]
+	  }
+  ]
 }

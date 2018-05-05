@@ -1,0 +1,8 @@
+header.header
+	.header__container
+		ul.social
+			each item in ['vk', 'gh', 'in']
+				li.socials__item
+					a(href="" class=`socials__link.socials__link_${item}`)
+		a(href="").hamburger
+		a(href="").down-arrow

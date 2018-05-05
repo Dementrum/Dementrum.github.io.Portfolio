@@ -1,0 +1,60 @@
+section.section.about
+	.about__left
+		svg.triangle.triangle_fill_white
+		.title.about__section-title
+			| Обо мне
+		.user-about
+			.user-about__picture
+				.user-about__title
+					.subtitle
+						| Кто я
+			.user-about__text
+				p Я веб разработчик из Новосибирска. Мне 27 лет. 
+					| Я занимаюсь разработкой современных сайтов  и приложений. 
+					| Мне нравится делать интересные и современные проекты.
+				p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+					| Чуть позже я освежу в нём свой контент. 
+					| А пока посмотрите, как тут всё классно и красиво!
+	
+	.about__right
+		svg.triangle.triangle_fill_beige
+		.about-data
+			.about-data__desc.about-user-info
+				.about-data__title
+					.subtitle Чем я могу быть полезен
+			.about-data__text
+				p Больше всего меня привлекет Frontend разработка,
+					| но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+			.about-data__content
+					.subtitle Чем я могу быть полезен
+			.about-data__text
+				p Больше всего меня привлекет Frontend разработка,
+					| но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+			.about-data__content
+				ul.skills
+					each skill in content.skills 
+						each skillsArray, skillName in skill
+							li.skills__item
+								.skill-section
+									.skill-section__title= skillName
+									ul.skill-section__list
+										each skillTitle in skillsArray
+											li.skills-section__item= skillTitle
+											.skill
+												svg.skill__circle
+												svg.skill__name= skillTitle
+
+
+				//- ul.skills
+				//- 	each skill in ['Frontend', 'Backend', 'WorkFlow']
+				//- 		li.skills__item
+				//- 			.skill-section
+				//- 				.skill-section__title= skill
+				//- 			ul.skill-section__list
+				//- 				each skillName in ['HTML3', 'CSS3', 'JQuery']
+				//- 					li.skills-section__item
+				//- 						.skill
+				//- 							svg.skill__circle
+				//- 							svg.skill__name= skillName
+
+
