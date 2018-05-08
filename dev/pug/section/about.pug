@@ -1,6 +1,10 @@
 section.section.about
 	.about__left
-		svg.triangle.triangle_fill_white
+		svg(
+			viewbox="0 0 1000 100" 
+			preserveAspectRatio="none"
+			class="triangle triangle_fill_white about__triangles")
+			polygon(points="0,0,0,100 1000,100")
 		.title.about__section-title
 			| Обо мне
 		.user-about
@@ -17,7 +21,11 @@ section.section.about
 					| А пока посмотрите, как тут всё классно и красиво!
 	
 	.about__right
-		svg.triangle.triangle_fill_beige
+		svg(
+			viewbox="0 0 1000 100" 
+			preserveAspectRatio="none"
+			class="triangle triangle_fill_beige about__triangles")
+			polygon(points="0,100 1000,100 1000,0")
 		.about-data
 			.about-data__desc.about-user-info
 				.about-data__title
