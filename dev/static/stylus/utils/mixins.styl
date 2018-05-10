@@ -1,3 +1,20 @@
+centered($axic = both) 
+	position absolute
+
+	if $axic =='both'
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+	
+	if $axic == 'x'
+		left 50%
+		transform translateX(-50%)
+	
+	if $axic == 'y'
+		top 50%
+		transform translateY(-50%)
+	
+
 absolute-center()
 	position absolute
 	top 50%
