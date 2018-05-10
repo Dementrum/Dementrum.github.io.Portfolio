@@ -4,14 +4,20 @@ module.exports = function() {
             .pipe($.gulp.dest('./build/static/img/'));
     });
 
+    // $.gulp.task('img:build', () => {
+    //     return $.gulp.src('./dev/static/img/**/*.{png,jpg,gif}')
+	// 		.pipe($.gp.imagemin({
+	// 			optimizationLevel: 5, 
+	// 			progressive: true, 
+	// 			svgoPlugins: [{removeViewBox: false}], 
+	// 			interlaced: true
+	// 		}))
+    //         .pipe($.gulp.dest('./build/static/img/'));
+    // });
+    
     $.gulp.task('img:build', () => {
         return $.gulp.src('./dev/static/img/**/*.{png,jpg,gif}')
-			.pipe($.gp.imagemin({
-				optimizationLevel: 5, 
-				progressive: true, 
-				svgoPlugins: [{removeViewBox: false}], 
-				interlaced: true
-			}))
+            .pipe($.gp.tinypng('ROs7wvgvqNPWKO1oKB70pi2cZByPlN6t'))
             .pipe($.gulp.dest('./build/static/img/'));
     });
 
@@ -21,3 +27,4 @@ module.exports = function() {
             .pipe($.gulp.dest('./build/static/img/general/'));
     });
 };
+;
