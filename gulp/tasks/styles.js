@@ -15,6 +15,7 @@ module.exports = function () {
     $.gulp.task('styles:dev', () => {
         return $.gulp.src('./dev/static/stylus/main.styl')
             .pipe($.gp.sourcemaps.init())
+            .pipe($.gp.sourcemaps.identityMap())
             .pipe($.gp.stylus({
                 'include css': true
             }))
@@ -32,5 +33,6 @@ module.exports = function () {
             .pipe($.browserSync.reload({
                 stream: true
             }));
+            
     });
 };
