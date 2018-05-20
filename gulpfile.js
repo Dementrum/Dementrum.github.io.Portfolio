@@ -6,7 +6,8 @@ global.$ = {
     del: require('del'),
     fs: require('fs'),
     browserSync: require('browser-sync').create(),
-    gp: require('gulp-load-plugins')()
+    gp: require('gulp-load-plugins')(),
+    cssunit: require('gulp-css-unit')
 };
 
 $.path.task.forEach(function(taskPath) {

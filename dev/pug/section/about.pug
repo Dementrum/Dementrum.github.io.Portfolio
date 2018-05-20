@@ -5,13 +5,13 @@ section.section.about
 			preserveAspectRatio="none"
 			class="triangle triangle_fill_white about__triangles")
 			polygon(points="0,0,0,100 1000,100")
-		.title.about__section-title
-			| Обо мне
+		+title('Обо мне','about-header.png','about__section-title')
 		.user-about
 			.user-about__picture
+				img(src="./static/img/content/MyPhoto.jpg",width="350px" height="435px", alt="My photo").myPhoto
 				.user-about__title
 					.subtitle
-						| Кто я
+						+subtitle('Кто я','about__section-subtitle')
 			.user-about__text
 				p Я веб разработчик из Новосибирска. Мне 27 лет. 
 					| Я занимаюсь разработкой современных сайтов  и приложений. 
@@ -64,5 +64,6 @@ section.section.about
 				//- 						.skill
 				//- 							svg.skill__circle
 				//- 							svg.skill__name= skillName
+
 
 

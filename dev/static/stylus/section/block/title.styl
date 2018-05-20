@@ -1,0 +1,28 @@
+.title
+	color gray
+	letter-spacing em(1.57, 14)
+	font-size em(63, 14)
+	bernier()
+	position relative
+	margin 0 auto
+	padding 0 70px
+	background-size 100%
+	background-position center center 
+	background-repeat no-repeat
+	
+	&.about__section-subtitle
+		font-size em(35, 14)
+		margin 40px 0 40px 0
+	
+	&:after, &:before
+		content ""
+		display block
+		centered(y)
+		width 22px
+		height 5px
+		background rgba(gray, 0.2)
+	&:after
+		right 30px
+	&:before
+		left 30px
+		

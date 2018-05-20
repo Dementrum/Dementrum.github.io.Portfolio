@@ -1,3 +1,24 @@
+//Fonts
+
+bernier($style = null)
+	font-family 'bernier'
+
+	if $style == light
+		font-weight light
+	
+	if $style == bold
+		font-weight bold
+	
+	if $style == null
+		font-weight normal
+
+bernierShade($style = null)
+	font-family 'bernierShade'
+
+	if $style == null
+		font-weight normal
+//Position
+
 centered($axic = both) 
 	position absolute
 
@@ -48,6 +69,8 @@ fixed($top = null, $right = null,  $bottom = null, $left = null)
 relative($top = null, $right = null,  $bottom = null, $left = null)
 	position(relative, $top, $right, $bottom, $left)
 
+//Size
+
 rem(size)
 	return (size/16)rem
 
@@ -66,6 +89,8 @@ em(target, context)
 
 persent(target, context)
 	target / context * 100%
+
+//Flex
 
 row(pos1, pos2 )
 	display: flex
