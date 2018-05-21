@@ -29,10 +29,6 @@ module.exports = function () {
             .pipe($.gp.autoprefixer({
                 browsers: ['last 3 version']
             }))
-			.pipe($.gp.cssunit({
-           		type     :    'px-to-rem',
-            	rootSize :    16
-        	}))
             .pipe($.gulp.dest('./build/static/css/'))
             .pipe($.browserSync.reload({
                 stream: true
