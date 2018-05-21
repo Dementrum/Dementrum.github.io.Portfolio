@@ -25,6 +25,12 @@ module.exports = function () {
                     message: error.message
                 };
             }))
+            .pipe($.gp.pxtorem({
+                    replace: false,
+                    propList: ['*'],
+                    minPixelValue: 1
+            }))
+            
             .pipe($.gp.sourcemaps.write())
             .pipe($.gp.autoprefixer({
                 browsers: ['last 3 version']
