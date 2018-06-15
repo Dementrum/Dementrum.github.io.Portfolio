@@ -33,7 +33,11 @@
     "gulp-svgmin": "^1.2.4",
     "gulp-tinypng": "^1.0.2",
     "gulp-uglifyjs": "^0.6.2",
-    "mozjpeg": "^6.0.0"
+    "mozjpeg": "^6.0.0",
+    "nib": "^1.1.2",
+    "postcss-custom-properties": "^7.0.0",
+    "postcss-fontpath": "^1.0.0",
+    "rucksack-css": "^1.0.2"
   },
   "dependencies": {
     "normalize.css": "^7.0.0",

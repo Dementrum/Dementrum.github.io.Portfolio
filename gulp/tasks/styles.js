@@ -2,10 +2,8 @@ module.exports = function () {
     $.gulp.task('styles:build', () => {
         return $.gulp.src('./dev/static/stylus/main.styl')
             .pipe($.gp.stylus({
+                use:[nib()],
                 'include css': true
-            }))
-            .pipe($.gp.autoprefixer({
-                browsers: ['last 3 version']
             }))
             .pipe($.gp.csscomb())
             .pipe($.gp.csso())
@@ -26,9 +24,9 @@ module.exports = function () {
                 };
             }))
             .pipe($.gp.pxtorem({
-                    replace: false,
-                    propList: ['*'],
-                    minPixelValue: 1
+                replace: false,
+                propList: ['*'],
+                minPixelValue: 1
             }))
             
             .pipe($.gp.sourcemaps.write())

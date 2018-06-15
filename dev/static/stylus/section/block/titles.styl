@@ -1,17 +1,16 @@
-.title
+.title, .subtitle 
+	position relative
 	color gray
 	letter-spacing 1.57px
 	font-size 63px
 	bernier()
-	position relative
-	margin 0 auto
 	padding 0 70px
-	background-size 100%
+	margin 0 auto
+	background-size cover
 	background-position center center 
 	background-repeat no-repeat
 	
 	&.about__section-subtitle
-		font-size 35px
 		margin 40px 0 40px 0
 	
 	&:after, &:before
@@ -23,6 +22,12 @@
 		background rgba(gray, 0.2)
 	&:after
 		right 30px
+
 	&:before
 		left 30px
-		
+	
+.subtitle
+	font-size 35px
+.about-data__title-sub
+	&:after, &:before
+		top  25%

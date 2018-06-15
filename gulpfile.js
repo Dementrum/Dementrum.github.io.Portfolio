@@ -3,12 +3,12 @@ global.$ = {
         task: require('./gulp/paths/tasks.js')
     },
     gulp: require('gulp'),
+    postcss: require('gulp-postcss'),
     del: require('del'),
     fs: require('fs'),
     browserSync: require('browser-sync').create(),
     gp: require('gulp-load-plugins')(),
-    postcss: require('gulp-postcss'),
-    // pxtorem: require('postcss-pxtorem'),
+    nib: require('nib')
 };
 
 $.path.task.forEach(function(taskPath) {

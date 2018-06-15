@@ -1,0 +1,24 @@
+footer.footer
+	.footer__row
+		.footer__col.footer__col-menu
+			nav.menu
+				ul.menu__list
+					each item in ['Мои работы', 'Обо мне', 'Блог', 'Авторизация']
+						li.menu__item
+							a(href="").menu__link
+		.footer__col.footer__col-socials
+			.footer__socials
+				ul.social.socials__rounded
+					each item in ['vk', 'gh', 'in']
+						li.socials__item
+							a(href="" class=`socials__link.socials__link_${item}`)
+	.footer__row
+		.footer__col.footer__col-menu
+			.footer__text.text-content
+				p Lorem
+		.footer__col.footer__col-socials
+			.footer__copyright
+				| © Дмитрий Колесников | создано с любовью в LoftSchool | 2016
+
+
+
