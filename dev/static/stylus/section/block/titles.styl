@@ -1,6 +1,6 @@
 .title, .subtitle 
 	position relative
-	color gray
+	color black 	
 	letter-spacing 1.57px
 	font-size 63px
 	bernier()
@@ -19,7 +19,7 @@
 		centered(y)
 		width 22px
 		height 5px
-		background rgba(gray, 0.2)
+		background rgba(black, 0.2)
 	&:after
 		right 30px
 
@@ -31,9 +31,5 @@
 .about-data__title-sub
 	&:after, &:before
 		top  25%
-@-moz-document url-prefix() { 
-	.about-data__title-sub:after, 
-	.about-data__title-sub:before {
-		top 30%
-  }
-}
+		-moz- top 30%
+		

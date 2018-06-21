@@ -27,21 +27,27 @@ section.section.about
 			.about-data__desc.about-user-info
 				.about-data__title
 					+subtitle('Чем я могу быть вам полезен', 'about-data__title-sub')
+				p Буду рад помочь Вам в создании, модернизации, редизайне сайта. Ваш сайт будет прекрасно смотреться на любых устройствах: телефонах, планшетах, десктопах.
+				p Для меня важно, чтобы Вы получили именно то, что Вам нужно. Будь то эффективный продающий лендинг, привлекательно оформленное портфолио, качественный корпоративный сайт или удобный интернет-магазин. 
+				p И самое главное, чтобы ваш сайт принес вам больше клиентов и достатка
 			.about-data__text
-				p Больше всего меня привлекет Frontend разработка,
-					| но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
-				ul.skills
-					each skill in content.skills 
-						each skillsArray, skillName in skill
-							li.skills__item
-								.skill-section
-									.skill-section__title= skillName
-									ul.skill-section__list
-										each skillTitle in skillsArray
-											li.skills-section__item= skillTitle
-											.skill
-												svg.skill__circle
-												svg.skill__name= skillTitle
+				p Больше всего меня привлекет Frontend разработка, 
+					| а также я могу решать не сложные задачи на Backend. Но давайте по порядку.
+			ul.skills
+				each skill in content.skills 
+					each skillsArray, skillName in skill
+						li.skills__item
+							.skill-section
+								.skill-section__title= skillName
+								ul.skill-section__list
+									each skillTitle in skillsArray
+										.skill
+											svg.skill__circle.circle.js-circle(viewbox='0 0 110 110' width="110" height="110")
+												circle.circle__first(r='45', cx='50%', cy='50%')
+													circle.circle__second.js-circle__second(r='45', cx='50%', cy='50%', 
+												data-circle='30', style='stroke-dasharray: 84.823, 282.6;')
+													svg.skill__name= skillTitle
+														li.skills-section__item= skillTitle
 
 
 				//- ul.skills
