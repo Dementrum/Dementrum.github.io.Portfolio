@@ -1,0 +1,19 @@
+section.section.map
+	.google-map
+		.map__data
+			.contacts
+				+subtitle('Контакты','contacts__title')
+				ul.contacts__list
+					-
+						var contacts = [
+						['vk', 'skype'],
+						['mail', 'gmail'],
+						['phone', '+79145240849']
+						]
+
+					each item in contacts
+						li.contacts__item.contacts-row
+							.contacts-row__icon #{item[0]}
+							.contacts-row__content #{item[1]}
+
+

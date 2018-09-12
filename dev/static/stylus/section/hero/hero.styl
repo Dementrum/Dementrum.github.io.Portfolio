@@ -1,15 +1,20 @@
 .hero 
-	height 600px
+	height em(660,14)
 	overflow hidden
 	position relative
 
+.hero__bg
+	min-width 100%
+	min-height 100%
+	display flex
+
 .hero__title
-	absolute($top:50%)
-	transform translateY(-50%)
+	centered(y)
 	text-align center
 	min-width 100%
+	max-width 100%
 	col(null, center)
 
 .hero__user-block
-	absolute-center()
+	centered(both)
 

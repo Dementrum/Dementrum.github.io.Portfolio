@@ -15,13 +15,17 @@
     "gulp-autoprefixer": "^4.0.0",
     "gulp-cheerio": "^0.6.2",
     "gulp-concat": "^2.6.1",
+    "gulp-css-unit": "^1.2.2",
     "gulp-csscomb": "^3.0.8",
     "gulp-csso": "^3.0.0",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^4.1.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^7.0.1",
     "gulp-pug": "^3.3.0",
+    "gulp-pxtorem": "^3.0.0",
+    "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-stylus": "^2.6.0",
@@ -29,11 +33,16 @@
     "gulp-svgmin": "^1.2.4",
     "gulp-tinypng": "^1.0.2",
     "gulp-uglifyjs": "^0.6.2",
-    "mozjpeg": "^6.0.0"
+    "mozjpeg": "^6.0.0",
+    "nib": "^1.1.2",
+    "postcss-custom-properties": "^7.0.0",
+    "postcss-fontpath": "^1.0.0",
+    "rucksack-css": "^1.0.2"
   },
   "dependencies": {
     "normalize.css": "^7.0.0",
     "npm": "^6.0.0",
+    "phantomjs": "^2.1.7",
     "svg4everybody": "^2.1.8"
   }
 }

@@ -1,5 +1,10 @@
 mixin icon(name,mod)
 	- mod = mod || ''
 	svg(class="icon icon-" + name + ' ' + mod)
-		use(xlink:href="/static/img/svg/symbol/sprite.svg#" + name)
+		use(xlink:href="static/img/svg/symbol/sprite.svg#" + name)
 
+mixin title(title,url,additionClass)
+	.title(style=`background-image:url('./static/img/general/decor/${url}')` class=additionClass)= title
+
+mixin subtitle(title,additionClass)
+	.subtitle(class=additionClass)= title

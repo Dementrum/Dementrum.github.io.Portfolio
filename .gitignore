@@ -1,5 +1,5 @@
 node_modules
 .idea
 .gulp
-*.swp
+.swp
 .gitignore

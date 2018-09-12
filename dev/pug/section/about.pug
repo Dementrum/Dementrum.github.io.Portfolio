@@ -1,48 +1,53 @@
 section.section.about
-	.about__left
-		svg.triangle.triangle_fill_white
-		.title.about__section-title
-			| Обо мне
-		.user-about
-			.user-about__picture
-				.user-about__title
-					.subtitle
-						| Кто я
+	.about__desc
+		svg(
+			viewbox="0 0 1000 100" 
+			preserveAspectRatio="none"
+			class="triangle triangle_fill_white about__triangles")
+			polygon(points="0,0,0,100 1000,100")
+		+title('Обо мне','about-header.png','about__section-title')
+		.user-about.user-about__picture
+				img(src="./static/img/content/MyPhoto.jpg", alt="My photo").myPhoto
+		.user-about__title
+			+subtitle('Кто я','about__section-subtitle')
 			.user-about__text
-				p Я веб разработчик из Новосибирска. Мне 27 лет. 
-					| Я занимаюсь разработкой современных сайтов  и приложений. 
+				p Я веб разработчик из Читинской области. Меня зовут Колесников Дмитрий. Я занимаюсь разработкой современных сайтов  и приложений. 
 					| Мне нравится делать интересные и современные проекты.
 				p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
 					| Чуть позже я освежу в нём свой контент. 
 					| А пока посмотрите, как тут всё классно и красиво!
 	
-	.about__right
-		svg.triangle.triangle_fill_beige
+	.about__skills
+		svg(
+			viewbox="0 0 1000 100" 
+			preserveAspectRatio="none"
+			class="triangle triangle_fill_beige about__triangles")
+			polygon(points="0,100 1000,100 1000,0")
 		.about-data
 			.about-data__desc.about-user-info
 				.about-data__title
-					.subtitle Чем я могу быть полезен
+					+subtitle('Чем я могу быть вам полезен', 'about-data__title-sub')
+				p Буду рад помочь Вам в создании, модернизации, редизайне сайта. Ваш сайт будет прекрасно смотреться на любых устройствах: телефонах, планшетах, десктопах.
+				p Для меня важно, чтобы Вы получили именно то, что Вам нужно. Будь то эффективный продающий лендинг, привлекательно оформленное портфолио, качественный корпоративный сайт или удобный интернет-магазин. 
+				p И самое главное, чтобы ваш сайт принес вам больше клиентов и достатка
 			.about-data__text
-				p Больше всего меня привлекет Frontend разработка,
-					| но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
-			.about-data__content
-					.subtitle Чем я могу быть полезен
-			.about-data__text
-				p Больше всего меня привлекет Frontend разработка,
-					| но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
-			.about-data__content
-				ul.skills
-					each skill in content.skills 
-						each skillsArray, skillName in skill
-							li.skills__item
-								.skill-section
-									.skill-section__title= skillName
-									ul.skill-section__list
-										each skillTitle in skillsArray
-											li.skills-section__item= skillTitle
-											.skill
-												svg.skill__circle
-												svg.skill__name= skillTitle
+				p Больше всего меня привлекет Frontend разработка, 
+					| а также я могу решать не сложные задачи на Backend. Но давайте по порядку.
+			ul.skills
+				each skill in content.skills 
+					each skillsArray, skillName in skill
+						li.skills__item
+							.skill-section
+								.skill-section__title= skillName
+								ul.skill-section__list
+									each skillTitle in skillsArray
+										.skill
+											svg.skill__circle.circle.js-circle(viewbox='0 0 110 110' width="110" height="110")
+												circle.circle__first(r='45', cx='50%', cy='50%')
+													circle.circle__second.js-circle__second(r='45', cx='50%', cy='50%', 
+												data-circle='30', style='stroke-dasharray: 84.823, 282.6;')
+													svg.skill__name= skillTitle
+														li.skills-section__item= skillTitle
 
 
 				//- ul.skills
@@ -56,5 +61,6 @@ section.section.about
 				//- 						.skill
 				//- 							svg.skill__circle
 				//- 							svg.skill__name= skillName
+
 
 
