@@ -42,6 +42,7 @@
   "dependencies": {
     "normalize.css": "^7.0.0",
     "npm": "^6.0.0",
+    "phantomjs": "^2.1.7",
     "svg4everybody": "^2.1.8"
   }
 }
